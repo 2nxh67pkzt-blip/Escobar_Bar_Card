@@ -13,7 +13,7 @@ export function Drinks(props: DrinksCardType) {
   return (
     <div className="drinks">
 
-      <img className="drinks__img" src={`{import.meta.env.BASE_URL}{props.imgUrl}`} alt={props.description} />
+      <img className="drinks__img" src={`${import.meta.env.BASE_URL}${props.imgUrl}`} alt={props.description} />
       
       <p className="drinks__rating">⭐️{props.rating}</p>
       
