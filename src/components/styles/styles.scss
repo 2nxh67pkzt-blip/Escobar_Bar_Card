@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "baseFont";
+  src: url(/public/saira-extracondensed-regular.woff2);
+}
+
+:root {
+  --black-color: #131111;
+  --white-text-color: #d4cccc;
+  --brown-color: #3f2507;
+}
+
+body {
+  background-color: var(--black-color);
+  font-family: "baseFont";
+}

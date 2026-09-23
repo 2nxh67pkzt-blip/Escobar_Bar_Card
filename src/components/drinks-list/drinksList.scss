@@ -1,0 +1,26 @@
+.drinks_list {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: var(--white-text-color);
+  list-style: none;
+  gap: 30px;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  @media (min-width: 768px) and (max-width: 1120px) {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px;
+    padding: 0;
+    padding-top: 10px;
+    gap: 2rem;
+  }
+
+  &__item {
+    outline: 1px solid rgba($color: #fff, $alpha: 0.15);
+    border-radius: 20px;
+  }
+}
