@@ -1,3 +1,4 @@
+
 import "./drinks.scss";
 
 interface DrinksCardType {
@@ -7,17 +8,18 @@ interface DrinksCardType {
   price: number;
   description?: string;
   rating?: number;
+  like?: string;
 }
 
 export function Drinks(props: DrinksCardType) {
+ 
   return (
     <div className="drinks">
 
       <img className="drinks__img" src={`${import.meta.env.BASE_URL}${props.imgUrl}`} alt={props.description} />
       
-      <p className="drinks__rating">⭐️{props.rating}</p>
-      
-      <div className="drinks__avalable">
+      <p className="drinks__rating">⭐️ {props.rating}</p>
+      <div className="drinks__available">
         {props.available ? "Ask to bar" : "Ask to bar"}
       </div>
       

@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 1px solid rgba($color: var(--white-text-color), $alpha: 0.15);
+
+    &__wrap {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__number {
+            margin: 0;
+            padding: 0;
+            color: var(--white-text-color);
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        &__title {
+            margin: 0;
+            padding: 0;
+            color: var(--white-text-color);
+            font-size: 16px;
+        }
+    }
+}
